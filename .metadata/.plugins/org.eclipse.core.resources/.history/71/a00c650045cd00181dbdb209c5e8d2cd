@@ -1,0 +1,5 @@
+package com.jaya.security.springsecurityclient;
+
+public class LogoutController {
+
+}

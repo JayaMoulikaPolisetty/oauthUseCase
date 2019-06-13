@@ -1,0 +1,7 @@
+package com.jaya.security.springsecurityauthserver.model;
+
+import org.springframework.security.core.userdetails.UserDetails;
+
+public class CustomUserDetails extends Users implements UserDetails{
+
+}

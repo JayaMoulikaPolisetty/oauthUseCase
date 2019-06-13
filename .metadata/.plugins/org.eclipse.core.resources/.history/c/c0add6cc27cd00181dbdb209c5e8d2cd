@@ -1,0 +1,20 @@
+package com.jaya.security.springsecurityauthserver.model;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="User")
+public class Users {
+
+	public Users(Users users) {
+		
+	}
+	
+	private Integer id;
+	private String name;
+	private String email;
+	private String password;
+	
+	
+
+}

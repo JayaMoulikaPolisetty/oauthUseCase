@@ -1,0 +1,32 @@
+package com.jaya.security.springsecurityauthserver.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+import com.jaya.security.springsecurityauthserver.model.CustomUserDetails;
+import com.jaya.security.springsecurityauthserver.model.Users;
+import com.jaya.security.springsecurityauthserver.repository.UsersRespository;
+
+@Service
+public class CustomUserDetailsService implements UserDetailsService{
+
+	@Autowired
+	private UsersRespository userRepo;
+	
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		Optional<Users> userOptional = userRepo.findByName(username);
+		
+		userOptional.orElseThrow(()-> new UsernameNotFoundException("Username not found"));
+		
+		return userOptional.map(CustomUserDetails::new);
+		
+		
+	}
+
+}

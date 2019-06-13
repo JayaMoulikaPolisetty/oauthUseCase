@@ -1,0 +1,13 @@
+package com.jaya.security.springsecurityauthserver.model;
+
+@Entity
+@Table(name="User")
+public class Users {
+
+	public Users(Users users) {
+		
+	}
+	
+	
+
+}

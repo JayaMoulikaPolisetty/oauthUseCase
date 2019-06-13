@@ -1,0 +1,12 @@
+package com.jaya.security.springsecurityauthserver.model;
+
+public class Users {
+
+	public Users() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

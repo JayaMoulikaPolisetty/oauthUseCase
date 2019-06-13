@@ -1,0 +1,11 @@
+package com.jaya.security.springsecurityauthserver.model;
+
+public class Users {
+
+	public Users(Users users) {
+		
+	}
+	
+	
+
+}

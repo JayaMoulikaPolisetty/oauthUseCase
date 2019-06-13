@@ -1,0 +1,24 @@
+server:
+  port: 8082
+  context-path: /ui
+  session:
+    cookie:
+      name: UISESSION
+
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: 107374756638414
+      clientSecret: 1fab503a4e834af4fc73c2715e1e3f9c
+      accessTokenUri: https://graph.facebook.com/access_token
+      userAuthorizationUri: https://facebook.com/dialog/oauth
+    resource:
+      userInfoUri: http://graph.facebook.com/
+
+
+spring:
+  thymeleaf:
+    cache: false

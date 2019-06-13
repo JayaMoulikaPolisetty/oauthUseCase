@@ -1,0 +1,8 @@
+package com.jaya.security.springsecurityauthserver.service;
+
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+@Service
+public class CustomUserDetailsService implements UserDetailsService{
+
+}

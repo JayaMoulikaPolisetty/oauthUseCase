@@ -1,0 +1,5 @@
+package com.jaya.security.springsecurityauthserver.model;
+
+public class CustomUserDetails {
+
+}

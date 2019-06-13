@@ -1,0 +1,8 @@
+package com.jaya.security.springsecurityauthserver.model;
+
+import javax.persistence.*;
+
+@Entity
+public class Role {
+
+}

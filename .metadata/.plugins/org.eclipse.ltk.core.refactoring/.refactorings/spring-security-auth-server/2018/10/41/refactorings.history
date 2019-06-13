@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spring-security-auth-server/src/main/java/com/techprimers&apos; to &apos;jaya&apos;" description="Rename resource &apos;techprimers&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/techprimers" name="jaya" stamp="1539241148676" updateReferences="true"/>
+</session>
